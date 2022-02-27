@@ -4,10 +4,13 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>VegeFoods Clone</title>
+<!-- fav icon adding -->
+	<link rel="icon" type="image/x-icon" href="img/favicon.png">
 <!-- font awesome cdn -->
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
 <!--custom css adding  -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
 <!-- owl css adding -->
 	<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css">
@@ -44,7 +47,18 @@
 				<div class="right">
 					<ul>
 						<li><a href="">Home</a></li>
-						<li><a href="">Shop</a></li>
+						<li>
+							<a href="">Shop <i class="fas fa-caret-down"></i></a>
+							<div class="has-sub-menu">
+								<ul class="sub-menu">
+									<li><a href="">Shop</a></li>
+									<li><a href="">Whishlist</a></li>
+									<li><a href="">Single Product</a></li>
+									<li><a href="">Cart</a></li>
+									<li><a href="">Checkout</a></li>
+								</ul>
+							</div>
+						</li>
 						<li><a href="">About</a></li>
 						<li><a href="">Blog</a></li>
 						<li><a href="">Contact</a></li>
@@ -217,7 +231,7 @@
 						<a href=""><i class="fas fa-shopping-cart"></i></a>
 						<a href=""><i class="fas fa-heart"></i></a>
 					</div>
-				*
+				
 				</div>
 				<!-- item 05 -->
 				<div class="p-item">
@@ -420,36 +434,69 @@
 				<h4>Subcribe to our Newsletter</h4>
 				<p>Get e-mail updates about our latest shops and special offers</p>
 			</div>
-			<div class="main-form">
-				<input type="email" name="" placeholder="Enter email address">
-				<button type="submit">Subscribe</button>
+			<div class="f-flex">
+				<div class="input">
+					<input type="email" name="" placeholder="Enter email address">
+				</div>
+				<div class="s-btn">
+					<button type="submit">Subscribe</button>
+				</div>
 			</div>
 			</div>
 		</div>
 	</div>
 	</form>
 <!-- form end -->
+<!-- footer starts -->
+	<footer>
+		<div class="container">
+			<div class="main-footer">
+				<div class="footer-content">
+					<div class="footer-1">
+						<h5>Vegefoods</h5>
+						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
+						<div class="footer-icon">
+							<a href=""><i class="fab fa-twitter"></i></a>
+							<a href=""><i class="fab fa-facebook-f"></i></a>
+							<a href=""><i class="fab fa-instagram"></i></a>
+						</div>
+					</div>
+					<div class="footer-2">
+						<h5>Menu</h5>
+						<ul class="f-menu">
+							<li><a href="">Shop</a></li>
+							<li><a href="">About</a></li>
+							<li><a href="">Journal</a></li>
+							<li><a href="">Contact Us</a></li>
+						</ul>
+					</div>
+					<div class="footer-3">
+						<h5>Help</h5>
+						<ul class="f-menu">
+							<li><a href="">Shipping Information</a><span><a href="">FAQs</a></span></li>
+							<li><a href="">Returns & Exchange</a><span class="span"><a href="">Contact</a></span></li>
+							<li><a href="">Terms & Conditions</a></li>
+							<li><a href="">Privacy Policy</a></li>
+						</ul>
+					</div>
+					<div class="footer-4">
+						<h5>Have a Questions?</h5>
+						<p class="d-flex"><span><i class="fas fa-map-marker-alt"></i></span>	203 Fake St. Mountain View, San Francisco, California, USA</p>
+						<p><i class="fas fa-phone-alt"></i>+2 392 3929 210</p>
+						<p class="mail"><i class="fas fa-envelope"></i>info@yourdomain.com</p>
+					</div>
+				</div>
+				<!-- copyright part -->
+				<div class="copyright">
+					<center><p>Copyright ©2022 All rights reserved | This template is made with <i class="fas fa-heart"></i> by <a href="index.html">Israk Sisir</a></p></center>
+				</div>
+			</div>
+		</div>
+	</footer>
+<!-- footer ends -->
 <!-- owl js adding -->
 	<script src="js/jquery.min.js"></script>
 	<script src="js/owl.carousel.js"></script>
-	<!-- projet setup code -->
-	<script>
-		$('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:true,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:2
-        },
-        1000:{
-            items:3
-        }
-    }
-})
-	</script>
+	<script src="js/main.js"></script>
 </body>
 </html>
